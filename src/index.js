@@ -1,12 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import './counter.css';
+import 'bootstrap/dist/css/bootstrap.css';
+import SecondsCounter from './SecondsCounter.js';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+let counter = 0;
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+setInterval(function(){
+    ReactDOM.render(<SecondsCounter seconds={counter}/>, document.getElementById('root'));
+    counter += 1;
+},
+1000);

@@ -1,0 +1,22 @@
+.app{
+    width: 100%;
+    background-color: black;
+    height: 180px;
+    color: white;
+    font-size: 110px;
+    text-align: center;
+    padding-top: 10px;
+}
+.box{
+    display: inline-block;
+    height: 150px;
+    background-color: #0e0e0e;
+    border-radius: 10px;
+}
+.icon{
+    width: 140px;
+}
+.counter{
+    width: 100px;
+    margin-left: 10px;
+}
